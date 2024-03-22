@@ -18,6 +18,7 @@ export default new Event({
           if (generatedNumber === guess) {
             newState.disconnect();
             clearInterval(tryDisconnect);
+            newState.channel.send('Um trouxa foi desconectado.')
           }
         }, 5000);
       }
