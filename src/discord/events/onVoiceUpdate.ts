@@ -12,8 +12,8 @@ export default new Event({
             clearInterval(tryDisconnect);
             return;
           }
-          const generatedNumber = getRandomNumber(1, 100);
-          const guess = getRandomNumber(1, 100);
+          const generatedNumber = getRandomNumber(1, 1000);
+          const guess = getRandomNumber(1, 1000);
           console.log(generatedNumber, guess);
           if (generatedNumber === guess) {
             newState.disconnect();
